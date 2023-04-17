@@ -50,7 +50,7 @@ struct HeaderView: View {
                         Text("My Friends")
                             .font(.system(size: 18, weight: .bold))
                             .foregroundColor(.white)
-                        Text("Discover")
+                        Text("Discovery")
                             .font(.system(size: 18, weight: .bold))
                             .foregroundColor(.gray)
                     }
