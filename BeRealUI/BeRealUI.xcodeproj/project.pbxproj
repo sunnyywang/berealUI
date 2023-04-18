@@ -43,6 +43,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E11BB3C529EE18D4003031D9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E1719DA329ECD32000CCF9F2 /* HeaderView.swift */,
+				E1719DA529ECD33D00CCF9F2 /* PostHeaderView.swift */,
+				E1719DA929ECD36400CCF9F2 /* PostsView.swift */,
+				E1719DAB29ECD37E00CCF9F2 /* FeedView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		E1719D8829ECD2D900CCF9F2 = {
 			isa = PBXGroup;
 			children = (
@@ -64,11 +75,8 @@
 			children = (
 				E1719D9429ECD2D900CCF9F2 /* BeRealUIApp.swift */,
 				E1719D9629ECD2D900CCF9F2 /* ContentView.swift */,
-				E1719DA329ECD32000CCF9F2 /* HeaderView.swift */,
-				E1719DA529ECD33D00CCF9F2 /* PostHeaderView.swift */,
 				E1719DA729ECD35000CCF9F2 /* PostView.swift */,
-				E1719DA929ECD36400CCF9F2 /* PostsView.swift */,
-				E1719DAB29ECD37E00CCF9F2 /* FeedView.swift */,
+				E11BB3C529EE18D4003031D9 /* Home */,
 				E1719D9829ECD2D900CCF9F2 /* Assets.xcassets */,
 				E1719D9A29ECD2D900CCF9F2 /* BeRealUI.entitlements */,
 				E1719D9B29ECD2D900CCF9F2 /* Preview Content */,

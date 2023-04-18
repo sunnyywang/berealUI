@@ -16,12 +16,12 @@ struct ContentView: View {
                     HeaderView()
                     NavigationLink( destination: PostView()) {
                         VStack {
-                            Image("IMG_1144")
+                            Image("IMG_1195")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 140, height: 150)
                                 .cornerRadius(13)
-                            Text("Add a caption...")
+                            Text("so meta")
                                 .padding(.leading, 2)
                                 .font(.system(size: 14, weight: .bold))
                                 .foregroundColor(.white)
@@ -39,7 +39,7 @@ struct ContentView: View {
                     FeedView()
                 }
             }
-        }
+        } .navigationBarBackButtonHidden(true)
     }
 }
 
