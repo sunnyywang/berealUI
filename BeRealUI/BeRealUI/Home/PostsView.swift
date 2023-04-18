@@ -20,30 +20,31 @@ struct PostsView: View {
                         .frame(width: .infinity, height: 500)
                         .cornerRadius(13)
                         .overlay(
+                            NavigationLink(destination: CommentsView()) {
                             VStack(spacing: 16){
-                                Image(systemName: "bubble.left.fill")
-                                    .font(.title)
-                                    .foregroundColor(.white)
-                                    .shadow(radius: 8, y:3)
-                                Image(systemName: "smiley.fill")
-                                    .font(.title)
-                                    .foregroundColor(.white)
-                                    .shadow(radius: 8, y:3)
-
-                            }.padding(20)
-                         , alignment: .bottomTrailing
-                                
-                        )
+                                    Image(systemName: "bubble.left.fill")
+                                        .font(.title)
+                                        .foregroundColor(.white)
+                                        .shadow(radius: 8, y:3)
+                                    Image(systemName: "smiley.fill")
+                                        .font(.title)
+                                        .foregroundColor(.white)
+                                        .shadow(radius: 8, y:3)
+                                    
+                                }
+                            } .padding(20) , alignment: .bottomTrailing )
                     Text("first day of academy!")
                         .padding(.leading, 8)
                         .font(.caption)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
-                    Text("Add a comment...")
-                        .padding(.leading, 8)
-                        .font(.caption)
-                        .fontWeight(.semibold)
-                        .foregroundColor(.gray)
+                    NavigationLink(destination: CommentsView()) {
+                        Text("Add a comment...")
+                            .padding(.leading, 8)
+                            .font(.caption)
+                            .fontWeight(.semibold)
+                            .foregroundColor(.gray)
+                    }
                 }
             }
         }
