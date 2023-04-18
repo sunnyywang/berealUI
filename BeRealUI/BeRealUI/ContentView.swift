@@ -32,7 +32,7 @@ struct ContentView: View {
                                 Text("29 sec late")
                                     .font(.system(size: 10, weight: .bold))
                                     .foregroundColor(.gray)
-                                Button { //doesn't work right now
+                                Button { //doesn't work rip
                                     Picker("", selection: $selection) {
                                             ForEach(choices, id: \.self) {
                                                 Text($0)
