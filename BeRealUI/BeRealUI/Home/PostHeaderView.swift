@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct PostHeaderView: View {
+    let choices = ["View Profile", "Share Profile", "Report this BeReal."]
+        @State private var selection: String? = nil
+        @State private var isMenuShown = false
+
     var body: some View {
         ZStack {
             VStack {
@@ -26,16 +30,17 @@ struct PostHeaderView: View {
                             .font(.system(size: 18, weight: .bold))
                             .font(.callout)
                             .foregroundColor(.white)
-                            //      Text("Curtis Media Center")
-                            // .font(.system(size: 14, weight: .regular))
-                         //   .foregroundColor(.gray)
+                        //      Text("Curtis Media Center")
+                        // .font(.system(size: 14, weight: .regular))
+                        //   .foregroundColor(.gray)
                         Text("4 min late")
                             .font(.system(size: 14, weight: .regular))
                             .foregroundColor(.gray)
                     }
                     .padding(.leading, 3)
                     .padding(.trailing, 190)
-                    Button {
+                    
+                    Button() {
                     } label: {
                         Image(systemName: "ellipsis")
                             .resizable()
@@ -43,6 +48,7 @@ struct PostHeaderView: View {
                             .frame(width: 24, height: 20)
                             .foregroundColor(.gray)
                             .padding(.trailing, 40)
+                        
                     }
                 }
             }

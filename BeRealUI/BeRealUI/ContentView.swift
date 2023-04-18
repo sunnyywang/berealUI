@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selection = "View Profile"
+        let choices = ["View Profile", "Share Profile", "Report this BeReal."]
+        @State private var isMenuShown = false
     var body: some View {
         NavigationView {
             ZStack {
@@ -29,9 +32,17 @@ struct ContentView: View {
                                 Text("29 sec late")
                                     .font(.system(size: 10, weight: .bold))
                                     .foregroundColor(.gray)
-                                Image(systemName: "ellipsis")
-                                    .font(.system(size: 13, weight: .bold))
-                                    .foregroundColor(.gray)
+                                Button { //doesn't work right now
+                                    Picker("", selection: $selection) {
+                                            ForEach(choices, id: \.self) {
+                                                Text($0)
+                                            }
+                                        } .pickerStyle(.menu)
+                                } label: {
+                                    Image(systemName: "ellipsis")
+                                        .font(.system(size: 13, weight: .bold))
+                                        .foregroundColor(.gray)
+                                }
                             }
                         }
                     }
