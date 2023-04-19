@@ -48,6 +48,7 @@ struct ContentView: View {
                     }
                     Spacer()
                     FeedView()
+                    Spacer()
                 }
             }
         } .navigationBarBackButtonHidden(true)
