@@ -33,49 +33,52 @@ struct ProfileView: View {
                             .padding(.trailing, 40)
                             .padding(.top, 2)
                     }
-                    Image("avatar")
-                        .resizable()
-                        .padding(.top, 15)
-                        .padding(.trailing, 15)
-                        .frame(width: 170, height: 170)
-                        .padding(.trailing, 12)
-                        .aspectRatio(contentMode: .fit)
-                    Text("Sunny Wang")
-                        .padding(.top, 10)
-                        .padding(.trailing,22)
-                        .font(.system(size: 30, weight: .bold))
-                        .foregroundColor(.white)
-                    Text("sunnywang")
-                        .padding(.trailing,22)
-                        .font(.system(size: 15, weight: .semibold))
-                        .foregroundColor(.white)
-                    HStack {
-                        Text("Your Memories")
-                            .padding(.trailing,130)
+                    ScrollView() {
+                        Image("avatar")
+                            .resizable()
+                            .padding(.top, 15)
+                            .padding(.trailing, 15)
+                            .frame(width: 170, height: 170)
+                            .padding(.trailing, 12)
+                            .aspectRatio(contentMode: .fit)
+                        Text("Sunny Wang")
                             .padding(.top, 10)
-                            .font(.system(size: 22, weight: .semibold))
+                            .padding(.trailing,22)
+                            .font(.system(size: 30, weight: .bold))
                             .foregroundColor(.white)
-                        Text("Only visible to you.")
-                            .padding(.top, 10)
-                            .font(.system(size: 10, weight: .semibold))
-                            .foregroundColor(.gray)
-                    }
-                    Image("IMG_1214") //placeholder...hopefully
-                        .resizable()
-                        .frame(width: 420, height: 250)
-                    Button {
-        
-                    } label: {
-                        Text("\u{1F517} BeRe.al/sunnywang")
-                            .padding(.top, 30)
-                            .padding(.leading, 2)
-                            .font(.system(size: 14, weight: .semibold))
+                        Text("sunnywang")
+                            .padding(.trailing,22)
+                            .font(.system(size: 15, weight: .semibold))
                             .foregroundColor(.white)
+                        HStack {
+                            Text("Your Memories")
+                                .padding(.trailing,130)
+                                .padding(.top, 10)
+                                .font(.system(size: 22, weight: .semibold))
+                                .foregroundColor(.white)
+                            Text("Only visible to you.")
+                                .padding(.top, 10)
+                                .font(.system(size: 10, weight: .semibold))
+                                .foregroundColor(.gray)
+                        }
+                        Image("IMG_1347") //placeholder...hopefully
+                            .resizable()
+                            .frame(width: 400, height: 250)
+                        Button {
+                            
+                        } label: {
+                            Text("\u{1F517} BeRe.al/sunnywang")
+                                .padding(.top, 30)
+                                .padding(.leading, 2)
+                                .font(.system(size: 14, weight: .semibold))
+                                .foregroundColor(.white)
+                        }
+                        Spacer()
                     }
-                    Spacer()
                 }
-
-            }
+                    
+                }
+            
 
         } .navigationBarBackButtonHidden(true)
     }

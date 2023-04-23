@@ -52,11 +52,22 @@ struct PostView: View {
                         Divider()
                             .frame(height: 0.5)
                             .background(Color.gray)
-                        Text("No RealMojis yet.")
-                            .font(.system(size: 11, weight: .semibold))
-                            .foregroundColor(.white)
-                            .padding(.top, 25)
-                            .padding(.bottom, 25)
+                        HStack {
+                            VStack {
+                                Image("IMG_0503")
+                                    .resizable()
+                                    .padding(.leading, 11)
+                                    .frame(width: 85, height: 55)
+                                    .padding(.trailing, 12)
+                                    .aspectRatio(contentMode: .fit)
+                                    .clipShape(Circle())
+                                Text("alecjn")
+                                    .font(.system(size: 10, weight: .bold))
+                                    .foregroundColor(.white)
+                                    .padding(.bottom, 5)
+                            }
+                            Spacer()
+                        }
                         Divider()
                             .frame(height: 0.5)
                             .background(Color.gray)

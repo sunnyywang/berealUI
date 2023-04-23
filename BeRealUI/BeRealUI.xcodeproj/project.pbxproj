@@ -10,6 +10,11 @@
 		E12952EA29EF5CAF007F006F /* FriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12952E929EF5CAF007F006F /* FriendView.swift */; };
 		E12952EC29EF5D5F007F006F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12952EB29EF5D5F007F006F /* ProfileView.swift */; };
 		E12E324529EEC144002E5AF5 /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12E324429EEC144002E5AF5 /* CommentsView.swift */; };
+		E16FCDA629F4C5C70002B280 /* Post1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16FCDA529F4C5C70002B280 /* Post1View.swift */; };
+		E16FCDA829F4C62F0002B280 /* Post2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16FCDA729F4C62F0002B280 /* Post2View.swift */; };
+		E16FCDAA29F4C86A0002B280 /* Post3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16FCDA929F4C86A0002B280 /* Post3View.swift */; };
+		E16FCDAC29F4C8D50002B280 /* Post4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16FCDAB29F4C8D50002B280 /* Post4View.swift */; };
+		E16FCDAE29F4C91C0002B280 /* Post5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16FCDAD29F4C91C0002B280 /* Post5View.swift */; };
 		E1719D9529ECD2D900CCF9F2 /* BeRealUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1719D9429ECD2D900CCF9F2 /* BeRealUIApp.swift */; };
 		E1719D9729ECD2D900CCF9F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1719D9629ECD2D900CCF9F2 /* ContentView.swift */; };
 		E1719D9929ECD2D900CCF9F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1719D9829ECD2D900CCF9F2 /* Assets.xcassets */; };
@@ -25,6 +30,11 @@
 		E12952E929EF5CAF007F006F /* FriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendView.swift; sourceTree = "<group>"; };
 		E12952EB29EF5D5F007F006F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		E12E324429EEC144002E5AF5 /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
+		E16FCDA529F4C5C70002B280 /* Post1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post1View.swift; sourceTree = "<group>"; };
+		E16FCDA729F4C62F0002B280 /* Post2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post2View.swift; sourceTree = "<group>"; };
+		E16FCDA929F4C86A0002B280 /* Post3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post3View.swift; sourceTree = "<group>"; };
+		E16FCDAB29F4C8D50002B280 /* Post4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post4View.swift; sourceTree = "<group>"; };
+		E16FCDAD29F4C91C0002B280 /* Post5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post5View.swift; sourceTree = "<group>"; };
 		E1719D9129ECD2D900CCF9F2 /* BeRealUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeRealUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1719D9429ECD2D900CCF9F2 /* BeRealUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeRealUIApp.swift; sourceTree = "<group>"; };
 		E1719D9629ECD2D900CCF9F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,13 +62,26 @@
 		E11BB3C529EE18D4003031D9 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E16FCDA429F4C59F0002B280 /* Feed */,
 				E1719DA329ECD32000CCF9F2 /* HeaderView.swift */,
 				E1719DA529ECD33D00CCF9F2 /* PostHeaderView.swift */,
-				E1719DA929ECD36400CCF9F2 /* PostsView.swift */,
-				E1719DAB29ECD37E00CCF9F2 /* FeedView.swift */,
 				E12E324429EEC144002E5AF5 /* CommentsView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		E16FCDA429F4C59F0002B280 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				E1719DAB29ECD37E00CCF9F2 /* FeedView.swift */,
+				E1719DA929ECD36400CCF9F2 /* PostsView.swift */,
+				E16FCDA529F4C5C70002B280 /* Post1View.swift */,
+				E16FCDA729F4C62F0002B280 /* Post2View.swift */,
+				E16FCDA929F4C86A0002B280 /* Post3View.swift */,
+				E16FCDAB29F4C8D50002B280 /* Post4View.swift */,
+				E16FCDAD29F4C91C0002B280 /* Post5View.swift */,
+			);
+			path = Feed;
 			sourceTree = "<group>";
 		};
 		E1719D8829ECD2D900CCF9F2 = {
@@ -172,13 +195,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1719DAC29ECD37E00CCF9F2 /* FeedView.swift in Sources */,
+				E16FCDA829F4C62F0002B280 /* Post2View.swift in Sources */,
 				E12952EA29EF5CAF007F006F /* FriendView.swift in Sources */,
 				E12952EC29EF5D5F007F006F /* ProfileView.swift in Sources */,
 				E1719D9729ECD2D900CCF9F2 /* ContentView.swift in Sources */,
 				E1719DA629ECD33D00CCF9F2 /* PostHeaderView.swift in Sources */,
 				E1719DAA29ECD36400CCF9F2 /* PostsView.swift in Sources */,
+				E16FCDAA29F4C86A0002B280 /* Post3View.swift in Sources */,
 				E1719DA429ECD32000CCF9F2 /* HeaderView.swift in Sources */,
+				E16FCDAE29F4C91C0002B280 /* Post5View.swift in Sources */,
 				E1719DA829ECD35000CCF9F2 /* PostView.swift in Sources */,
+				E16FCDA629F4C5C70002B280 /* Post1View.swift in Sources */,
+				E16FCDAC29F4C8D50002B280 /* Post4View.swift in Sources */,
 				E12E324529EEC144002E5AF5 /* CommentsView.swift in Sources */,
 				E1719D9529ECD2D900CCF9F2 /* BeRealUIApp.swift in Sources */,
 			);

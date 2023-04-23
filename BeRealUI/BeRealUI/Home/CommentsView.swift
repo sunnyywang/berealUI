@@ -9,7 +9,9 @@ import SwiftUI
 
 struct CommentsView: View {
     @State private var entry: String = ""
-
+    @Binding var image: String
+    @Binding var caption: String
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -40,12 +42,12 @@ struct CommentsView: View {
                     }
                     .padding(.bottom, 20)
                     ScrollView {
-                        Image("IMG_1143")
+                        Image(image)
                             .resizable()
                             .scaledToFit()
                             .frame(width: .infinity, height: 500)
                             .cornerRadius(13)
-                        Text("first day of academy!")
+                        Text(caption)
                             .font(.system(size: 16, weight: .bold))
                             .foregroundColor(.white)
                             .padding(.bottom, 10)
@@ -68,8 +70,4 @@ struct CommentsView: View {
     }
 }
 
-struct CommentsView_Previews: PreviewProvider {
-    static var previews: some View {
-        CommentsView()
-    }
-}
+

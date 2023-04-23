@@ -13,9 +13,12 @@ struct FeedView: View {
             Color.black.ignoresSafeArea()
             ScrollView(.vertical, showsIndicators: false) {
                 LazyVStack(spacing: 30) {
-                    ForEach(0..<15) { _ in
-                        PostsView()
-                    }
+                    PostsView()
+                    Post1View()
+                    Post2View()
+                    Post3View()
+                    Post4View()
+                    Post5View()
                 }
             }
         }

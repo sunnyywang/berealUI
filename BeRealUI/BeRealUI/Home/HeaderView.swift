@@ -23,7 +23,6 @@ struct HeaderView: View {
                             .padding(.top, 12)
                     }
                     Button {
-                        
                     } label: {
                         Image("IMG_1132") //"BeReal."
                             .resizable()
@@ -46,7 +45,6 @@ struct HeaderView: View {
                 .padding(.horizontal)
                 HStack(spacing: 15) {
                     Button {
-                        
                     } label: {
                         Text("My Friends")
                             .font(.system(size: 16, weight: .bold))

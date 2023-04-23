@@ -1,26 +1,28 @@
 //
-//  PostsView.swift
+//  Post2View.swift
 //  BeRealUI
 //
-//  Created by Sunny Wang on 4/16/23.
+//  Created by Sunny Wang on 4/22/23.
 //
 
 import SwiftUI
 
-struct PostsView: View {
+struct Post2View: View {
+    @State private var image: String = "IMG_1145"
+    @State private var caption: String = "headshots<3"
     var body: some View {
         VStack {
             PostHeaderView()
            Spacer()
             ZStack (alignment: .topLeading) {
                 VStack (alignment: .leading){
-                    Image("IMG_1143")
+                    Image(image)
                         .resizable()
                         .scaledToFit()
                         .frame(width: .infinity, height: 500)
                         .cornerRadius(13)
                         .overlay(
-                            NavigationLink(destination: CommentsView()) {
+                            NavigationLink(destination: CommentsView(image: $image, caption: $caption)) {
                             VStack(spacing: 16){
                                     Image(systemName: "bubble.left.fill")
                                         .font(.title)
@@ -33,12 +35,12 @@ struct PostsView: View {
                                     
                                 }
                             } .padding(20) , alignment: .bottomTrailing )
-                    Text("first day of academy!")
+                    Text(caption)
                         .padding(.leading, 8)
                         .font(.caption)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
-                    NavigationLink(destination: CommentsView()) {
+                    NavigationLink(destination: CommentsView(image: $image, caption: $caption)) {
                         Text("Add a comment...")
                             .padding(.leading, 8)
                             .font(.caption)
@@ -51,9 +53,8 @@ struct PostsView: View {
     }
 }
 
-struct PostsView_Previews: PreviewProvider {
+struct Post2View_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
-

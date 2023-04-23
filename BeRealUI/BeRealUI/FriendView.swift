@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct FriendView: View {
+    @State private var inputWord: String = ""
     var body: some View {
         NavigationView{
             ZStack {
@@ -37,11 +38,17 @@ struct FriendView: View {
                                 .padding(.top, 20)
                         }
                     }
-                        Image("IMG_1205") //placeholder
-                            .resizable()
-                            .frame(width: .infinity, height: 750)
+                    Image("black") //placeholder "IMG_1205"
+                                               .resizable()
+                                               .frame(width: .infinity, height: 700)
+            //Form {
+              //              TextField("Add or search friends", text: $inputWord)
+                  //          .textFieldStyle(RoundedBorderTextFieldStyle())
+                    //            .padding(.all, 5)
+                      //          .background(Color.gray)
+                        //        .font(.system(size: 15, weight: .heavy, design: .default))
+                          //      .cornerRadius(10)
                 }
-                
             }
         } .navigationBarBackButtonHidden(true)
     }
